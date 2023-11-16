@@ -1,4 +1,4 @@
-# PwC Switzerland Power BI Virtual Case Experience (2/3) – Customer Retention
+# PwC Switzerland Power BI Virtual Case Experience– Customer Retention
 ![welcome_page](Welcome.JPG)
 
 ## Background
