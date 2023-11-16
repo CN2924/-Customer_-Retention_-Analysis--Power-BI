@@ -2,27 +2,27 @@
 ![welcome_page](Welcome.JPG)
 
 ## Background
-Customers in the telecom industry are hard-earned, and like the Retention Manager from our telecom Client, no brand wants to lose them. A few weeks after presenting the [Call Center Trends](https://github.com/Analyst-Joan/Call-center-Trends) dashboard to the management, the Retention Manager from the telecom reached out directly to Analyst-Joan. He was impressed by the work and asked for a dashboard about customer retention.
+Customers in the telecom industry are hard-earned, and like the Retention Manager from our telecom Client, no brand wants to lose them. 
 
-Additionally, the telecom Retention Manager scheduled a meeting with the engagement partner at PwC to better understand the data. Some points covered in the meeting include:
+Additionally, Some points covered include:
 1.	The need for proactive steps in customer retention - The retention department is here to get customers back in case of termination. Currently, they get in touch after they have terminated the contract, but this is reactionary, and it will be better to know in advance who is at risk.
 2.	Prior Analysis carried out in Excel always resulted in a dead-end.
 3.	The need for more In-depth analysis of the telecom’s customers, via self-explanatory, clear visuals for presentation to the management team.
-The retention manager also provided more context to the required dashboard through the email shown below
+
 ![](RetentionMgr_Input.JPG)
  
-## About the Data
-The dataset is a Microsoft Excel file that contains one table, consisting of **7,043 rows and 23 columns** of **PhoneNow Telecoms** customer information, which includes, customer Demographics, Account Information, and Service Subscriptions. The data was gotten from [Forage]( https://cdn.theforage.com/vinternships/companyassets/4sLyCPgmsy8DA6Dh3/02%20Churn-Dataset.xlsx).   
+  **About the Data**
+Dataset is a Microsoft Excel file that contains one table, consisting of **7,043 rows and 23 columns** of **PhoneNow Telecoms** customer information, which includes, customer Demographics, Account Information, and Service Subscriptions. The data was gotten from [Forage]( https://cdn.theforage.com/vinternships/companyassets/4sLyCPgmsy8DA6Dh3/02%20Churn-Dataset.xlsx).   
 
-## Client’s Need 
+# Client’s Need: 
 A Power BI dashboard that reflects all relevant Key Performance Indicators (KPIs) and metrics in the dataset, Insights (findings) and recommendations (suggestions as to what needs to be changed).
 
-## Target Audience
+# Target Audience:
 -	Janet, The Retention Manager at PhoneNow Telecoms.
 -	The Engagement Partner at PwC
 -	Management Team at PhoneNow
 
-## Skills/Concepts applied
+# Skills/Concepts applied:
 -	Defining KPIs
 -	Cleaning/Validation in Power Query
 -	Power BI DAX Concepts: Calculated Measures
@@ -36,7 +36,7 @@ The dataset was imported into Power BI’s Power Query for data validation and c
 -	Column datatypes were validated appropriately.
 -	The **senior citizen** status of customers in the `senior citizen` column was changed from numeric 	representation to text for clarity i.e., “0” replaced with “No” and “1” replaced with “Yes”.
   
-## Data Modelling
+# Data Modelling
 _This was not applicable as the dataset has only one table._ However, a **measures table** was created to store calculated measures for Enhanced reusability, Improved data model organization and Increased performance.
 
 ![](Data_Model2.JPG)
@@ -44,7 +44,7 @@ _This was not applicable as the dataset has only one table._ However, a **measur
 ## Data Exploration / KPI Visualization.
 With the data now processed, it’s time to explore the data. We’ll analyze relevant KPIs, which will include data-driven insights that are critical to the organization's success, visualize findings, and show customers at risk. 
 
-### Analyzing Customer Churn
+## Analyzing Customer Churn
 I started with analyzing metrics that show Customer churn based on demographics, Account information, and Service subscriptions. We’ll first look at total customers, their demographics, how long they’ve been PhoneNow customers (Tenure), and how many of them left (Churn). Taking a count of the `customers IDs` column and the count of those whose status in the `Churn` column is “yes”, we see that there are **7,043** customers, out of which **1,869** left the business. The following measures were also created to analyze the metrics:
 
 ```
@@ -146,9 +146,9 @@ Tech Support = DIVIDE(
  
 ![](Service_sub.JPG)
 
-The Visual above shows that customers subscribed to phone services had a very high churn rate of 90.9%, followed by Fiber optic internet service subscribers (69.4%). With the least being subscribers with no internet service subscription. What could be the challenge(s) with the phone and fiber optic internet service of PhoneNow Telecoms? 🤔🤔🤔 The management team will need to investigate this.
+The Visual above shows that customers subscribed to phone services had a very high churn rate of 90.9%, followed by Fiber optic internet service subscribers (69.4%). With the least being subscribers with no internet service subscription. What could be the challenge(s) with the phone and fiber optic internet service of PhoneNow Telecoms? The management team will need to investigate this.
 
-### Churn Dashboard
+## Churn Dashboard
 
 Having analyzed metrics for customer churn, the visuals were then brought into a single page view in the dashboard shown below as requested.
  
@@ -161,7 +161,7 @@ From the Churn analysis, the **Potential risk areas** Identified include:
 - Type of Internet service
 These will be analyzed further with the aim to uncover possible reasons for the high churn.
 
-### Customer Risk Analysis
+## Customer Risk Analysis
 Based on the insights derived from analyzing the Churn rate across different levels, further analysis was then carried out, to drill down and assess possible reasons for the high churn rate, within the categories of customers, seen to be at higher risk for churn. This will help the retention manager and the management team make proactive, data-driven decisions that will improve Customer retention. 
 Firstly, a DAX measure was computed for churn rate as shown below. 
 
@@ -201,10 +201,7 @@ The visual above shows that Fiber optic internet service subscribers, those on m
 
 These potential KPIs are aligned with the retention Manager’s objectives and can help her be proactive in driving customer retention.
 
-## Conclusion
+# Conclusion
 The KPIs should be tracked over time and used to guide decision-making and performance improvement efforts. 
 
 Here is the [interactive Dashboards](https://drive.google.com/file/d/13sbP8_0BKpj8quYXlyudNlGRcVHeLEE1/view?usp=sharing) designed to provide flexibility for The Engagement Partner at PwC and Janet, The Retention Manager at PhoneNow Telecoms, to enable querying of varying metrics and in-depth discourse of the findings with the management team.
-
-Thank you.
-
